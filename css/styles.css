@@ -1,0 +1,121 @@
+:root {
+  --color-primario: black;
+  --color-secundario: white;
+  --color-oferta: green;
+  --fuente: "Poppins", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente);
+  line-height: 1.6;
+  background-color: #f7f7f7;
+}
+
+/* Header */
+.main-header {
+  background: url('../img/mate.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.hero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  text-align: center;
+  color: var(--color-secundario);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 55px;
+  height: 55px;
+  background-color: var(--color-primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.wpp-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+}
+
+.card .price {
+  font-weight: bold;
+  color: var(--color-oferta);
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #bbb;
+  margin-left: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-primario);
+  padding: 2rem 1rem;
+}
+
+.social-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+
+/* Responsive Mobile First */
+@media (min-width: 768px) {
+  .hero-content {
+    max-width: 600px;
+  }
+
+  .card {
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -24,8 +24,8 @@
           <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="./pages/mates.html">Mates</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Sucursales</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/sucursales.html">Sucursales</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
           </ul>
         </div>
       </div>
@@ -35,11 +35,11 @@
       <div class="hero-content">
         <h1>Los mejores mates de la República Argentina</h1>
         <p>Tradición y calidad en cada sorbo. Elegí tu mate ideal.</p>
-        <button class="btn btn-light btn-lg">Ver Modelos</button>
+        <button class="btn btn-light btn-lg" onclick="document.querySelector('.models').scrollIntoView({behavior: 'smooth'})">Ver Modelos</button>
       </div>
     </section>
 
-    <a href="https://wa.me/541112345678" class="whatsapp-btn" target="_blank" aria-label="Contactanos por WhatsApp">
+    <a class="whatsapp-btn" target="_blank" aria-label="Contactanos por WhatsApp">
       <img src="./img/LogoWhatsApp.webp" alt="WhatsApp" class="wpp-icon" />
     </a>
   </header>

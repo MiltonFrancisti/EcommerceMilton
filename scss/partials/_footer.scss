@@ -1,0 +1,27 @@
+@use 'variables';
+
+.footer {
+  background-color: variables.$footer-bg;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .social {
+      margin-top: 1rem;
+      a {
+        margin: 0 0.5rem;
+        color: variables.$secondary-color;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}

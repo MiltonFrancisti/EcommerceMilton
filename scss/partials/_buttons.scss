@@ -1,0 +1,19 @@
+@use 'variables';
+
+.btn-cta {
+  background-color: variables.$secondary-color;
+  color: variables.$dark-green;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  display: inline-block; // ✅ evita que se rompa en grid o flex
+  text-align: center;
+  min-width: 120px; // opcional, para uniformidad
+
+  &:hover {
+    background-color: variables.$cta-hover;
+    color: #fff;
+  }
+}
